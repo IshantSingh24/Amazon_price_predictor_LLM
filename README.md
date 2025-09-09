@@ -22,8 +22,8 @@ We curated a "lite" dataset from the massive [Amazon Reviews 2023](https://huggi
 
 Here's a peek at the dataset distribution:
 
-![Dataset Distribution 1](data1.jpg)
-![Dataset Distribution 2](data2.jpg)
+![Dataset Distribution 1](data3.png)
+![Dataset Distribution 2](data2.png)
 
 Uploaded to Hugging Face as [ishant24/lite-data](https://huggingface.co/datasets/ishant24/lite-data) for easy access. Custom scripts in `items.py` and `loaders.py` handle the heavy lifting – check `data_prep.ipynb` for the full prep workflow.
 
@@ -37,7 +37,7 @@ We fine-tuned Llama 3.1-8B using QLoRA (Quantized Low-Rank Adaptation) – a mem
 
 Training graph from WandB:
 
-![Training Graph](wandb.img)
+![Training Graph](wanb.png)
 
 The process is detailed in `training.ipynb`. We used libraries like Transformers, PEFT, and TRL for seamless SFT (Supervised Fine-Tuning). 
 
@@ -50,7 +50,7 @@ Evaluation happens in `Test.ipynb`, where we pit the model against unseen test d
 
 Results graph:
 
-![Results Graph](result.img)
+![Results Graph](result.png)
 
 Why so good? The model captures nuances like brand, features, and quality from descriptions – e.g., "premium stainless steel fridge" gets a higher guess than "basic mini cooler." Errors often stem from outliers (super-cheap or luxury items), but overall, it's a solid e-commerce sidekick.
 
@@ -80,4 +80,5 @@ def llama_predict(prompt):
     return predicted_price
 
 Tester.test(llama_predict, test_data)
+
 
