@@ -1,6 +1,6 @@
 # Amazon Price Predictor 🚀
 
-![Project Banner](https://via.placeholder.com/1200x300.png?text=Amazon+Price+Predictor) <!-- Replace with actual banner if available -->
+![Project Banner](https://github.com/IshantSingh24/Amazon_price_predictor_LLM/blob/main/banner.png) <!-- Replace with actual banner if available -->
 
 Ever wondered how much that shiny new gadget on Amazon *really* costs? What if an AI could guess the price just from the product description? Enter **Amazon Price Predictor** – a fine-tuned Llama model that turns product blurbs into dollar signs! Built on Meta's Llama 3.1-8B, this project fine-tunes the beast for spot-on price predictions, all while keeping things lightweight and efficient. No more overpaying – let AI do the haggling! 💸
 
@@ -80,3 +80,4 @@ def llama_predict(prompt):
     return predicted_price
 
 Tester.test(llama_predict, test_data)
+
