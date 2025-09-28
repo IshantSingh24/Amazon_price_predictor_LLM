@@ -79,6 +79,7 @@ def llama_predict(prompt):
     # Your inference code here
     return predicted_price
 
-Tester.test(llama_predict, test_data)
+Tester.test(llama_predict, test_
+
 
 
