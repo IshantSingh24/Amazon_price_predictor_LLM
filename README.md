@@ -73,13 +73,8 @@ In benchmarks (on our test set), it outperforms base Llama (which hallucinates p
 - **Train**: Fire up `training.ipynb` on Kaggle/GPU.
 - **Test**: Load model in `Test.ipynb` and evaluate with `Tester.test(predict_fn, test_data)`.
 
-Example prediction:
-```python
-def llama_predict(prompt):
-    # Your inference code here
-    return predicted_price
 
-Tester.test(llama_predict, test_
+
 
 
 
